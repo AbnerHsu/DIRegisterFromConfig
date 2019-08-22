@@ -11,6 +11,8 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="Unity.Configuration" Version="5.11.1" />
+    <PackageReference Include="Unity.Microsoft.DependencyInjection" Version="5.10.2" />
   </ItemGroup>
 
 </Project>

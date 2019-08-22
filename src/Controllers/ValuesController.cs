@@ -10,6 +10,14 @@ namespace DIRegisterFromConfig.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
+        private IRepository _repository;
+
+        public ValuesController(IRepository repository)
+        {
+            _repository = repository;
+        }
+
+
         // GET api/values
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
@@ -21,7 +29,7 @@ namespace DIRegisterFromConfig.Controllers
         [HttpGet("{id}")]
         public ActionResult<string> Get(int id)
         {
-            return "value";
+            return _repository.GetData; // "value";
         }
 
         // POST api/values

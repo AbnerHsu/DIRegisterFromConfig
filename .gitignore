@@ -1,0 +1,5 @@
+src/bin/*
+src/obj/*
+src/obj/project.assets.json
+src/obj/DIRegisterFromConfig.csproj.nuget.g.props
+src/obj/DIRegisterFromConfig.csproj.nuget.cache
